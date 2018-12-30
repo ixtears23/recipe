@@ -4,9 +4,9 @@
 <html>
 <head>
 <meta charset="EUC-KR">
-<title>home</title>
+<title>Board</title>
 </head>
 <body>
-	<h1>home</h1>
+	<h1>board</h1>
 </body>
 </html>

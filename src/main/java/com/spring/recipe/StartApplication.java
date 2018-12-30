@@ -3,7 +3,6 @@ package com.spring.recipe;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRegistration;
-import javax.servlet.ServletRegistration.Dynamic;
 
 import org.springframework.web.WebApplicationInitializer;
 import org.springframework.web.context.ContextLoaderListener;
@@ -30,6 +29,6 @@ public class StartApplication implements WebApplicationInitializer {
 		ServletRegistration.Dynamic dispatcher = container.addServlet("recipeServlet", new DispatcherServlet(dispatcherContext));
 		dispatcher.setLoadOnStartup(1);
 		dispatcher.addMapping("*.do");
-		
+		dispatcher.addMapping("*.json");
 	}
 }
